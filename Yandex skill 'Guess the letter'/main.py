@@ -1,21 +1,21 @@
-def hlp(text): #проверка на помощь
+def hlp(text):
     if text.find("помощь") != -1:
         return True
     return False
         
-def rul(x): #проверка на правила
+def rul(x):
     rules = ['что ты умеешь', 'что делать']
     if (x in rules) or x.find("правила") != -1:
         return True
     return False 
 
-def gam0(text): #начало игры, основная программа
+def gam0(text):
     gam0 = ['алиса начинай', 'алиса давай играть', 'начать игру', 'поехали', 'запускай', 'начинай', 'запусти'] 
     if (text in gam0) or (text.find("начать") != -1) or (text.find("играть") != -1):
         return True
     return False
 
-def exit(text): #выход из навыка
+def exit(text):
     message_exit = ['выйти', 'закончить', 'прекратить','вернись','хватит', 'стоп', 'завершить']
     if (text in message_exit) or (text.find("хватит") != -1):
         return True
