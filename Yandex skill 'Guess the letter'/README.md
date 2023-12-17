@@ -1,4 +1,4 @@
-[https://dialogs.yandex.ru/store/skills/fbd33dbe-otgadaj-bukvu](SKILL)
+[SKILL](https://dialogs.yandex.ru/store/skills/fbd33dbe-otgadaj-bukvu))
 
 ## Description
 A skill for the smart Yandex assistant Alice created by the 'CLAY' team as part of a hackathon from Yandex textbook and Alice.
