@@ -13,4 +13,4 @@ CLAY
 Team leader, programmer
 
 ## Project implementation methods
-Programming language 'Python', graphic editor 'Krita'
+Programming language 'Python', public cloud platform 'Yandex Cloud', graphic editor 'Krita'
