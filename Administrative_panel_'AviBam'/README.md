@@ -8,7 +8,7 @@ Administrative panel for Avito analysts. Using it, you can manage prices for dis
 BimBam
 
 ## Role in the team
-Team leader, programmer
+Team leader, programmer.
 
 ## Project implementation methods
 Programming language 'Python', framework 'Django', standardized hypertext markup language for viewing web pages in a browser 'HTML', formal language for describing the appearance of a document written using a markup language 'CSS'.
