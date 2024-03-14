@@ -11,4 +11,4 @@ BimBam
 Team leader, programmer.
 
 ## Project implementation methods
-Programming language 'Python', framework 'Django', standardized hypertext markup language for viewing web pages in a browser 'HTML', formal language for describing the appearance of a document written using a markup language 'CSS'.
+Programming language 'Python', framework 'Django', programming language 'JS', standardized hypertext markup language for viewing web pages in a browser 'HTML', formal language for describing the appearance of a document written using a markup language 'CSS'.
