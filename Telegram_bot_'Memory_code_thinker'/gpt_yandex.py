@@ -1,5 +1,4 @@
-import requests
-import re
+import requests, re
 
 def get_yandexgpt_response(person_info: dict, request_subject: dict) -> str:
     ai_role = ''
