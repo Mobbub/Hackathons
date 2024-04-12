@@ -239,14 +239,13 @@ def noviy(message):
 @bot.message_handler(func = lambda message: message.text == 'Начать заново↩️')
 def zanovo(message):
     kb = types.ReplyKeyboardMarkup(resize_keyboard = True)
-    btn8 = types.KeyboardButton(text = 'Эпитафия')
-    btn9 = types.KeyboardButton(text = 'Биография')
-    kb.add(btn8)
-    kb.add(btn9)
+    btn1 = types.KeyboardButton(text = 'Начнём')
+    kb.add(btn1)
     chat_id = message.chat.id
-    session[chat_id] = {'flag1': False, 'flag2': False, 'flag3': False, 'flag4': False, 'flag5': False, 'flag6': False, 'flag7': False, 'flag8': False, 'flag9': False, 'flag10': False, 'flag11': False, 'flag12': False, 'fio': '', 'dr': '', 'ds': '', 'mr': '', 'ms': '', 'supr': '', 'obr': '', 'rd': '', 'graj': '', 'deti': '', 'vnuki': '', 'dost': '',}
+    session[chat_id] = {'flag_admin': False, 'flag1': False, 'flag2': False, 'flag3': False, 'flag4': False, 'flag5': False, 'flag6': False, 'flag7': False, 'flag8': False, 'flag9': False, 'flag10': False, 'flag11': False, 'flag12': False, 'fio': '', 'dr': '', 'ds': '', 'mr': '', 'ms': '', 'supr': '', 'obr': '', 'rd': '', 'graj': '', 'deti': '', 'vnuki': '', 'dost': ''}
     save_session(session)
-    bot.send_message(message.chat.id, 'Хорошо! Что вас интересует?\nВыбери нужное вам действие под этим сообщением ⬇️', reply_markup=kb)
+    bot.send_message(message.chat.id, 'Приветствую!👋 \nЯ буду задавать вам простые и однострочные вопросы, на которые вы должны будете отвечать, для составления страницы памяти.\n<b><i>Если у вас по какой-то причине нет ответа на вопрос, то нажмите на кнопку "Следующий вопрос</i></b>🔼<b><i>"</i></b>.\nЕсли вы хотите получить больше информации о боте, то используйте команду /info', parse_mode = 'HTML')
+    bot.send_message(message.chat.id, 'Начнём?', reply_markup=kb)
 
 @bot.message_handler(func = lambda message: message.text == '◀️Прошлый вопрос')
 def prosh_vopr(message):
