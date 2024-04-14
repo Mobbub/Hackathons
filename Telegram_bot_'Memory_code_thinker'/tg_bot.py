@@ -4,7 +4,7 @@ from telebot import types
 from geopy.geocoders import Nominatim
 from telebot.handler_backends import BaseMiddleware, CancelUpdate
 
-bot = telebot.TeleBot('', use_class_middlewares = True)
+bot = telebot.TeleBot('token', use_class_middlewares = True)
 
 class SimpleMiddleware(BaseMiddleware):
     def __init__(self, limit) -> None:
