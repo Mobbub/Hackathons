@@ -548,12 +548,6 @@ def info(message):
         else:
             bot.send_message(message.chat.id, 'Что то пошло не так... 😵‍💫\n<i>Введите награды, премии или достижения, которые есть у человека, еще раз, проверьте правильность и логику написанного.</i> ✅\nНапример: <code>Знак Почета 1954</code>''', reply_markup=kb, parse_mode = "HTML")
     else:
-        kb = types.ReplyKeyboardMarkup(resize_keyboard = True)
-        btn74 = types.KeyboardButton(text = 'Эпитафия')
-        btn75 = types.KeyboardButton(text = 'Биография')
-        kb.add(btn74)
-        kb.add(btn75)
         bot.send_message(message.chat.id, 'Извините, я вас не понимаю... 😔')
-        bot.send_message(message.chat.id, 'Что вас интересует?', reply_markup=kb)
 
 bot.polling()
