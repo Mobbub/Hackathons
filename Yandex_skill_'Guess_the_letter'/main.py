@@ -2,21 +2,25 @@ def hlp(text):
     if text.find("помощь") != -1:
         return True
     return False       
+    
 def rul(x):
     rules = ['что ты умеешь', 'что делать']
     if (x in rules) or x.find("правила") != -1:
         return True
-    return False 
+    return False
+    
 def gam0(text):
     gam0 = ['алиса начинай', 'алиса давай играть', 'начать игру', 'поехали', 'запускай', 'начинай', 'запусти'] 
     if (text in gam0) or (text.find("начать") != -1) or (text.find("играть") != -1):
         return True
     return False
+    
 def exit(text):
     message_exit = ['выйти', 'закончить', 'прекратить','вернись','хватит', 'стоп', 'завершить']
     if (text in message_exit) or (text.find("хватит") != -1):
         return True
     return False
+    
 def popitki(tries_num):
     if tries_num ==0:
         return ('попыток')
@@ -28,6 +32,7 @@ def popitki(tries_num):
         return ('попытки')
     else:
         return ('попыток')
+        
 def kol_words(words):
     if words ==0:
         return ('слов')
@@ -39,6 +44,7 @@ def kol_words(words):
         return ('слова')
     else:
         return ('слов')
+        
 def game(answer, l, tries_num, words, ready, session):
     message_exit = ['выйти', 'закончить', 'прекратить','хватит', 'стоп', 'завершить']
     if (answer.find('буква') != -1) or (len(answer) == 1):
@@ -66,6 +72,7 @@ def game(answer, l, tries_num, words, ready, session):
         return [f'В слове {answer} есть эта буква', 'true', l, tries_num, words + 1, 'false', 'false']
     else:
         return [f'В слове {answer} нет этой буквы', 'true', l, tries_num, words + 1, 'false', 'false']
+
 def usual(answer):
     if hlp(answer):
         return ['''Возникли вопросы? Вы можете прослушать правила, сказав слово: "Правила" 
@@ -84,6 +91,7 @@ def usual(answer):
         До свидания!''', 'false', '', 0, 0, 'false', 'true']
     return ['''Извините, я Вас не поняла. 
     Произнесите одно из слов: Правила, Помощь, Играть, Завершить''' , 'false', '', 0, 0, 'false', 'false']  
+
 def handler(event, context):    
     text = ''
     answer = ''
