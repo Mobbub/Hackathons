@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>EKFbam</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <a href="" class="logo-link archivo"><img src="../static/pictures/logo-ekf.png" alt="logo"><span class="red">EKF</span>bam</a>
+            </div>
+            <div class="header-user">
+                <button class="comfortaa exit">Выйти</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <div class="container main-section_container">
+                <div class="main-wrapper">
+                    <form action = "/upload" method = "POST" enctype = "multipart/form-data">
+                        <p><input name="file" type="file" id="input__file" class="input input__file" multiple></p>
+                        <label for="input__file" class="input__file-button">
+                            <span class="input__file-button-text comfortaa">Выберите файл</span>
+                        </label>
+                        <p><input type="submit" value="Отправить" class="main-button comfortaa"></p>
+                    </form> 
+                </div>
+                <div>
+                    <table id="csv-data"></table>
+                </div>    
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+
+</body>
+</html>
