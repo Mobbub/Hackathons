@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaBam</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 class="archivo logo"><span class="archivo">Ba</span>Bam</h1>
+            </div>
+            <div class="exit-button">
+                <button class="exit">Выйти</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-upload">
+            <div class="container section-upload_container">
+                <div class="upload-wrapper">
+                    <div class="input__wrapper">
+                        <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                        <label for="input__file" class="input__file-button">
+                           <span class="input__file-icon-wrapper"><img class="input__file-icon" src="../static/pictures/download.png" alt="Выбрать файл" width="25" style="filter: invert(1);"></span>
+                           <span class="input__file-button-text">Выберите файл</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-result">
+            
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+</body>
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--<script src="../static/js/main.js"></script>-->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</html>

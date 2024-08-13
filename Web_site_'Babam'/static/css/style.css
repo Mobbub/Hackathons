@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.archivo {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.comfortaa {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100vw;
+}
+
+body {
+    background: linear-gradient(to bottom right, rgb(255, 209, 169), white, white, rgb(255, 209, 169));
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffad65;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff8a23;
+}
+
+.section-stars {
+    position: absolute;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 0px 0px 50px 50px;
+}
+
+header .container {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 60px;
+    padding: 15px;
+    transition: 0.4s;
+    color: #ffad65;
+}
+
+.logo:hover {
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.logo span {
+    color: rgb(255, 144, 49);
+}
+
+.exit-button button {
+    width: 15vw;
+    height: 8vh;
+    margin-right: 20px;
+    border: 2px rgb(184, 86, 0) solid;
+    color: rgb(184, 86, 0);
+    font-size: 24px;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+
+.exit-button button:hover {
+    color: white;
+    background-color: rgb(184, 86, 0);
+    cursor: pointer;
+
+}
+
+.section-main .container {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    width: 40vw;
+    height: 70vh;
+    border-radius: 50px;
+    border: 3px rgb(255, 144, 47) solid;
+    box-shadow: 0px 0px 100px rgb(255, 195, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.main-wrapper:hover {
+    transform: scale(1.01);
+}
+
+.main-wrapper h3 {
+    font-size: 40px;
+    color: rgb(255, 144, 47);
+    font-weight: 900;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.form input {
+    width: 30vw;
+    height: 5vh;
+    border: rgb(255, 144, 47) 2px solid;
+    border-radius: 10px;
+    color: #ffad65;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.form input::placeholder {
+    color: #ffad65;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.form button {
+    width: 10vw;
+    height: 5vh;
+    background-color: white;
+    color: #ffad65;
+    border: 2px rgb(255, 144, 47) solid;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.6s;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background-color: rgb(184, 86, 0);
+    color: white;
+    border-color: rgb(184, 86, 0);
+}
+
+.section-upload .container {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-wrapper {
+    width: 40vw;
+    height: 45vh;
+    border: rgb(255, 195, 143) 4px solid;
+    border-radius: 25px;
+    background: linear-gradient(to bottom right, rgb(255, 230, 208), rgb(255, 215, 180), rgb(255, 240, 227), rgb(255, 215, 180), rgb(255, 230, 208));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.input__file-icon-wrapper {
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-right: 1px solid #fff;
+}
+
+.input__file-button-text {
+    line-height: 1;
+    margin-top: 1px;
+}
+
+.input__file-button {
+    width: 20vw;
+    max-width: 290px;
+    height: 10vh;
+    background: rgb(255, 144, 47);
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+
+.input__file-button:hover {
+    transform: scale(1.1);
+}
+
+.section-result .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0px;
+}
+
+.result-title {
+    margin-top: 5vh;
+    font-size: 60px;
+    color: rgb(255, 144, 47);
+}
+
+.section-result__answer {
+    width: 90vw;
+    border-radius: 50px;
+    border: #ffad65 5px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.answer-first {
+    width: 80vw;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.answer-second {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffad65;
+}
+
+.answer-second form input {
+    width: 30vw;
+    height: 6vh;
+    font-size: 24px;
+    border: 0;
+    background-color: rgb(184, 86, 0);
+    border-radius: 25px;
+    color: white;
+    padding-left: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.answer-second form input::placeholder {
+    color: white;
+}
+
+.answer-second form input:focus {
+    outline: 0;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.answer-second form button {
+    width: 20vw;
+    height: 7vh;
+    color: white;
+    border-radius: 25px;
+    border: 0;
+    background-color: rgb(134, 63, 0);
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+.answer-second form button:hover {
+    filter: grayscale(0.4);
+    cursor: pointer;
+}
+
+.answer-second__name {
+    width: 45vw;
+    border-right: rgb(255, 145, 49) solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.answer-second form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    gap: 2vh;
+}
+
+.answer-second h3 {
+    font-size: 32px;
+    margin: 5vh 0px;
+    color: rgb(184, 86, 0);
+}
+
+.answer-second__id {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-third {
+    width: 80vw;
+}
+
+.answer-third h3 {
+    text-align: center;
+    font-size: 32px;
+    color: #ff8a23;
+    margin: 3vh 0px;
+}
+
+.answer-third p {
+    margin-bottom: 3vh;
+    font-size: 24px;
+}
+
+/* Yaroslav start*/
+
+/* global colors */
+
+:root {
+    --green: #00F43F;
+    --blue: #4346B4;
+    --pink: #EC687A;
+}
+
+/* global values */
+
+:root {
+    --internal-margins: 60px;
+    --rounding: 32px;
+    --elements-margins: 20px;
+}
+
+/* global */
+
+.flex {
+    display: flex;
+}
+
+.cuc-regi {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: var(--internal-margins);
+    padding: 20px;
+    font-size: 22px;
+    line-height: 22px;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    background-color: #ff8a23;
+    border-radius: var(--rounding);
+}
+
+.errors {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: var(--internal-margins);
+    padding: 20px;
+    font-size: 22px;
+    line-height: 22px;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    background-color: rgb(184, 86, 0);
+    border-radius: var(--rounding);
+}
+
+
+.loadBar {
+    flex-direction: column;
+    align-items: center;
+}
+
+.loadBar_img {
+    width: 60px;
+}
+
+.loadBar_text {
+    font-size: 22px;
+    line-height: 22px;
+    color: rgb(184, 86, 0);
+}
+
+
+
+
+/* Yaroslav end*/
