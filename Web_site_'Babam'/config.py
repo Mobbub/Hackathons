@@ -1,4 +1,4 @@
 HOST = 'localhost'
 USER = 'root'
-PASSWORD = '4152637890Sv'
+PASSWORD = 'PASSWORD'
 DATABASE = 'expobank'
