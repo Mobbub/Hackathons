@@ -1,6 +1,5 @@
 ## Description
-The essence of this site is to generate a leaderboard and predict the following services that clients from the database will need. 
-Not finished
+The essence of this site is to generate a leaderboard and predict the following services that clients from the database will need./nNot finished
 
 ## Achievements
 18 place at the hackathon 'ЭКСПОХАК' 10.08.2024.
