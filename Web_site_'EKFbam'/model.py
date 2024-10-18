@@ -20,7 +20,7 @@ def improve_image(image_name, image_format):
     
 # Инференс модели по объектам в формате картинки
 def inferens_yolo_img(image_name, image_format):
-    model = YOLO('models/EKFbam-350ep.pt')
+    model = YOLO('models/378epN.pt')
     
     results = model.predict(f'static/image_analysis/improve_image/{image_name}.{image_format}')
     
