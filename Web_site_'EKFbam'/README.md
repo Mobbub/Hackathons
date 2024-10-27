@@ -2,7 +2,7 @@
 The essence of this site is to analyze electrical circuits and, based on this analysis, make a commercial offer. The main feature is the use of a retrained ml YOLOv8m.
 
 ## Achievements
-8 place at the hackathon 'EKF AI Challenge' 19.07.2024.
+8 place at the hackathon 'EKF AI Challenge' 19.07.2024. 3 place in the international competition 'Digital Future' 24.10.2024.
 
 ## Team
 BimBam
